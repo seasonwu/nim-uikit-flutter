@@ -28,12 +28,15 @@ class _SplashState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    if(haveLogin){
+    if (haveLogin) {
       return const HomePage();
-    }else{
+    } else {
       return Scaffold(
         body: Center(
-          child: Text("will go to homePage after login...",style: TextStyle(fontSize: 16),),
+          child: Text(
+            "will go to homePage after login...",
+            style: TextStyle(fontSize: 16),
+          ),
         ),
       );
     }
@@ -57,10 +60,8 @@ class _SplashState extends State<SplashPage> {
 
   /// init depends package for app
   void _doInit(String appKey) async {
-
     //如果使用自动登录可在初始化的时候传入loginInfo
-    var options =
-        await NIMSDKOptionsConfig.getSDKOptions(appKey);
+    var options = await NIMSDKOptionsConfig.getSDKOptions(appKey);
 
     IMKitClient.init(appKey, options).then((success) {
       if (success) {
@@ -73,17 +74,15 @@ class _SplashState extends State<SplashPage> {
     });
   }
 
-  void startLogin(){
+  void startLogin() {
     //fixme 将您的云信IM账号(accid)和Token设置在这里即可
-    String account = "your account";
-    String token = "your token";
-    IMKitClient.loginIM(NIMLoginInfo(
-        account: account,
-        token: token))
+    String account = "test1";
+    String token = "test123456";
+    IMKitClient.loginIM(NIMLoginInfo(account: account, token: token))
         .then((value) {
-      if(value){
+      if (value) {
         updateAPNsToken();
-        setState((){
+        setState(() {
           haveLogin = true;
         });
       }

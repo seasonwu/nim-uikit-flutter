@@ -10,7 +10,7 @@ import 'package:path_provider/path_provider.dart';
 
 class IMDemoConfig {
   //云信IM appKey
-  static const AppKey = 'your app key';
+  static const AppKey = '23fc7d7a3d053c3408ed33d16823513d';
 
   //高德Android Key
   static const AMapAndroid = 'your amap android key';

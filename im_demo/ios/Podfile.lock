@@ -55,9 +55,6 @@ PODS:
   - fluttertoast (0.0.2):
     - Flutter
     - Toast
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
   - GCDWebServer (3.5.4):
     - GCDWebServer/Core (= 3.5.4)
   - GCDWebServer/Core (3.5.4)
@@ -67,21 +64,21 @@ PODS:
     - Flutter
   - nim_core (1.4.7):
     - Flutter
-    - NIMSDK_LITE (~> 9.13.0)
+    - NIMSDK/QChat (~> 9.17.0)
+    - NIMSDK_LITE/FCS (~> 9.17.0)
     - YXAlog
-  - NIMSDK_LITE (9.13.1):
-    - NIMSDK_LITE/NOS (= 9.13.1)
-    - YXArtemis
-  - NIMSDK_LITE/NOS (9.13.1):
-    - YXArtemis
+  - NIMSDK/QChat (9.17.1):
+    - YXArtemis_XCFramework
+  - NIMSDK_LITE/FCS (9.17.1):
+    - YXArtemis_XCFramework
   - open_filex (0.0.2):
     - Flutter
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
-  - permission_handler_apple (9.1.1):
+  - permission_handler_apple (9.3.0):
     - Flutter
-  - phone_state (1.0.3):
+  - phone_state (1.0.4):
     - Flutter
   - ReachabilitySwift (5.0.0)
   - SDWebImage (5.18.3):
@@ -92,20 +89,21 @@ PODS:
     - FlutterMacOS
   - sqflite (0.0.3):
     - Flutter
-    - FMDB (>= 2.7.5)
+    - FlutterMacOS
   - SwiftyGif (5.4.4)
   - Toast (4.0.0)
   - url_launcher_ios (0.0.1):
     - Flutter
   - video_player_avfoundation (0.0.1):
     - Flutter
+    - FlutterMacOS
   - webview_flutter_wkwebview (0.0.1):
     - Flutter
   - yunxin_alog (0.0.1):
     - Flutter
     - YXAlog (~> 1.0.7)
   - YXAlog (1.0.7)
-  - YXArtemis (1.1.0)
+  - YXArtemis_XCFramework (1.1.4)
 
 DEPENDENCIES:
   - amap_flutter_location (from `.symlinks/plugins/amap_flutter_location/ios`)
@@ -125,9 +123,9 @@ DEPENDENCIES:
   - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
   - phone_state (from `.symlinks/plugins/phone_state/ios`)
   - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
-  - sqflite (from `.symlinks/plugins/sqflite/ios`)
+  - sqflite (from `.symlinks/plugins/sqflite/darwin`)
   - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
-  - video_player_avfoundation (from `.symlinks/plugins/video_player_avfoundation/ios`)
+  - video_player_avfoundation (from `.symlinks/plugins/video_player_avfoundation/darwin`)
   - webview_flutter_wkwebview (from `.symlinks/plugins/webview_flutter_wkwebview/ios`)
   - yunxin_alog (from `.symlinks/plugins/yunxin_alog/ios`)
 
@@ -138,15 +136,15 @@ SPEC REPOS:
     - AMapLocation
     - DKImagePickerController
     - DKPhotoGallery
-    - FMDB
     - GCDWebServer
+    - NIMSDK
     - NIMSDK_LITE
     - ReachabilitySwift
     - SDWebImage
     - SwiftyGif
     - Toast
     - YXAlog
-    - YXArtemis
+    - YXArtemis_XCFramework
 
 EXTERNAL SOURCES:
   amap_flutter_location:
@@ -182,11 +180,11 @@ EXTERNAL SOURCES:
   shared_preferences_foundation:
     :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
   sqflite:
-    :path: ".symlinks/plugins/sqflite/ios"
+    :path: ".symlinks/plugins/sqflite/darwin"
   url_launcher_ios:
     :path: ".symlinks/plugins/url_launcher_ios/ios"
   video_player_avfoundation:
-    :path: ".symlinks/plugins/video_player_avfoundation/ios"
+    :path: ".symlinks/plugins/video_player_avfoundation/darwin"
   webview_flutter_wkwebview:
     :path: ".symlinks/plugins/webview_flutter_wkwebview/ios"
   yunxin_alog:
@@ -200,35 +198,35 @@ SPEC CHECKSUMS:
   AMapLocation: 5248aec2455ebb5d104b367813c946430a2ee033
   audioplayers_darwin: 877d9a4d06331c5c374595e46e16453ac7eafa40
   connectivity_plus: bf0076dd84a130856aa636df1c71ccaff908fa1d
-  device_info_plus: 7545d84d8d1b896cb16a4ff98c19f07ec4b298ea
+  device_info_plus: c6fb39579d0f423935b0c9ce7ee2f44b71b9fce6
   DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
   DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
   file_picker: ce3938a0df3cc1ef404671531facef740d03f920
-  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  fluttertoast: eb263d302cc92e04176c053d2385237e9f43fad0
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  fluttertoast: e9a18c7be5413da53898f660530c56f35edfba9c
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   image_gallery_saver: cb43cc43141711190510e92c460eb1655cd343cb
-  image_picker_ios: 4a8aadfbb6dc30ad5141a2ce3832af9214a705b5
-  nim_core: 68f6b71c3b8fd2648312b1047878b709218d50f0
-  NIMSDK_LITE: 594799d792ec7ec2c1e48ff93ca1340c7b7fd2cb
+  image_picker_ios: c560581cceedb403a6ff17f2f816d7fea1421fc1
+  nim_core: 4be3382c0c8123e2ee41089ff44cb447e1adc016
+  NIMSDK: 91a2fc9dba32d06a29a15d7768ba921acdb00069
+  NIMSDK_LITE: 255f2d6f625914883de2e85b8e2e7edea6b41cb4
   open_filex: 6e26e659846ec990262224a12ef1c528bb4edbe4
-  path_provider_foundation: c68054786f1b4f3343858c1e1d0caaded73f0be9
-  permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
-  phone_state: d0d36ac85a7cc06ed62e88343795ed5cd7e3d6c9
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
+  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
+  phone_state: 699623cef1a83f28ea66bc1d33cf0a65bdb1ffb1
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
-  shared_preferences_foundation: 986fc17f3d3251412d18b0265f9c64113a8c2472
-  sqflite: 31f7eba61e3074736dff8807a9b41581e4f7f15a
+  shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
+  sqflite: 673a0e54cc04b7d6dba8d24fb8095b31c3a99eec
   SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
-  url_launcher_ios: 08a3dfac5fb39e8759aeb0abbd5d9480f30fc8b4
-  video_player_avfoundation: 6d971a232d72e6ee25368378d48a079dea01f1cf
+  url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
+  video_player_avfoundation: 7c6c11d8470e1675df7397027218274b6d2360b3
   webview_flutter_wkwebview: b7e70ef1ddded7e69c796c7390ee74180182971f
   yunxin_alog: c5532d2a6ab378baef9927fcae5ab19fe36c1103
   YXAlog: ac9bab3aff1326caa72cc25aedc358bc8d4f1b31
-  YXArtemis: e9cedfafd67faff267c24f245063bac78c113e1c
+  YXArtemis_XCFramework: d298161285aa9cf0c99800b17847dc99aef60617
 
-PODFILE CHECKSUM: b2fab7bd54736d5b7eb1fe53350ce2d1346f64c8
+PODFILE CHECKSUM: ddeb31fbf4746a7bc952a1910a7b533a4eb78fc6
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.15.2
