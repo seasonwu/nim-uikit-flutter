@@ -1,5 +1,5 @@
 PODS:
-  - AMap3DMap (9.7.0):
+  - AMap3DMap (10.0.800):
     - AMapFoundation (>= 1.8.0)
   - amap_flutter_location (0.0.1):
     - AMapLocation
@@ -17,35 +17,35 @@ PODS:
     - ReachabilitySwift
   - device_info_plus (0.0.1):
     - Flutter
-  - DKImagePickerController/Core (4.3.4):
+  - DKImagePickerController/Core (4.3.9):
     - DKImagePickerController/ImageDataManager
     - DKImagePickerController/Resource
-  - DKImagePickerController/ImageDataManager (4.3.4)
-  - DKImagePickerController/PhotoGallery (4.3.4):
+  - DKImagePickerController/ImageDataManager (4.3.9)
+  - DKImagePickerController/PhotoGallery (4.3.9):
     - DKImagePickerController/Core
     - DKPhotoGallery
-  - DKImagePickerController/Resource (4.3.4)
-  - DKPhotoGallery (0.0.17):
-    - DKPhotoGallery/Core (= 0.0.17)
-    - DKPhotoGallery/Model (= 0.0.17)
-    - DKPhotoGallery/Preview (= 0.0.17)
-    - DKPhotoGallery/Resource (= 0.0.17)
+  - DKImagePickerController/Resource (4.3.9)
+  - DKPhotoGallery (0.0.19):
+    - DKPhotoGallery/Core (= 0.0.19)
+    - DKPhotoGallery/Model (= 0.0.19)
+    - DKPhotoGallery/Preview (= 0.0.19)
+    - DKPhotoGallery/Resource (= 0.0.19)
     - SDWebImage
     - SwiftyGif
-  - DKPhotoGallery/Core (0.0.17):
+  - DKPhotoGallery/Core (0.0.19):
     - DKPhotoGallery/Model
     - DKPhotoGallery/Preview
     - SDWebImage
     - SwiftyGif
-  - DKPhotoGallery/Model (0.0.17):
+  - DKPhotoGallery/Model (0.0.19):
     - SDWebImage
     - SwiftyGif
-  - DKPhotoGallery/Preview (0.0.17):
+  - DKPhotoGallery/Preview (0.0.19):
     - DKPhotoGallery/Model
     - DKPhotoGallery/Resource
     - SDWebImage
     - SwiftyGif
-  - DKPhotoGallery/Resource (0.0.17):
+  - DKPhotoGallery/Resource (0.0.19):
     - SDWebImage
     - SwiftyGif
   - file_picker (0.0.1):
@@ -62,6 +62,29 @@ PODS:
     - Flutter
   - image_picker_ios (0.0.1):
     - Flutter
+  - NECoreIMKit/FCS_Special (9.6.9):
+    - NECoreKit
+    - NIMSDK_LITE/FCS
+    - YXAlog
+  - NECoreKit (9.7.0):
+    - YXAlog (= 1.0.7)
+  - NEDyldYuv (0.0.1)
+  - NERoomKit/Base_FCS_Special (1.30.0):
+    - NECoreIMKit/FCS_Special
+    - NECoreKit (>= 9.6.6)
+    - NERtcSDK/RtcBasic
+    - NIMSDK_LITE/FCS
+  - NERoomKit/ScreenShare_Special (1.30.0):
+    - NECoreKit (>= 9.6.6)
+    - NERtcSDK/ScreenShare
+  - NERtcSDK/RtcBasic (5.6.25)
+  - NERtcSDK/ScreenShare (5.6.25)
+  - netease_roomkit (0.0.1):
+    - Flutter
+    - NEDyldYuv (= 0.0.1)
+    - NERoomKit/Base_FCS_Special (= 1.30.0)
+    - NERoomKit/ScreenShare_Special (= 1.30.0)
+    - YXAlog
   - nim_core (1.4.7):
     - Flutter
     - NIMSDK/QChat (~> 9.17.0)
@@ -80,18 +103,18 @@ PODS:
     - Flutter
   - phone_state (1.0.4):
     - Flutter
-  - ReachabilitySwift (5.0.0)
-  - SDWebImage (5.18.3):
-    - SDWebImage/Core (= 5.18.3)
-  - SDWebImage/Core (5.18.3)
+  - ReachabilitySwift (5.2.3)
+  - SDWebImage (5.19.6):
+    - SDWebImage/Core (= 5.19.6)
+  - SDWebImage/Core (5.19.6)
   - shared_preferences_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
   - sqflite (0.0.3):
     - Flutter
     - FlutterMacOS
-  - SwiftyGif (5.4.4)
-  - Toast (4.0.0)
+  - SwiftyGif (5.4.5)
+  - Toast (4.1.1)
   - url_launcher_ios (0.0.1):
     - Flutter
   - video_player_avfoundation (0.0.1):
@@ -117,6 +140,7 @@ DEPENDENCIES:
   - GCDWebServer (= 3.5.4)
   - image_gallery_saver (from `.symlinks/plugins/image_gallery_saver/ios`)
   - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - netease_roomkit (from `.symlinks/plugins/netease_roomkit/ios`)
   - nim_core (from `.symlinks/plugins/nim_core/ios`)
   - open_filex (from `.symlinks/plugins/open_filex/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
@@ -137,6 +161,11 @@ SPEC REPOS:
     - DKImagePickerController
     - DKPhotoGallery
     - GCDWebServer
+    - NECoreIMKit
+    - NECoreKit
+    - NEDyldYuv
+    - NERoomKit
+    - NERtcSDK
     - NIMSDK
     - NIMSDK_LITE
     - ReachabilitySwift
@@ -167,6 +196,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/image_gallery_saver/ios"
   image_picker_ios:
     :path: ".symlinks/plugins/image_picker_ios/ios"
+  netease_roomkit:
+    :path: ".symlinks/plugins/netease_roomkit/ios"
   nim_core:
     :path: ".symlinks/plugins/nim_core/ios"
   open_filex:
@@ -191,7 +222,7 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/yunxin_alog/ios"
 
 SPEC CHECKSUMS:
-  AMap3DMap: dce25dd3e51e6b92109caa7d0c97fc6055830fb3
+  AMap3DMap: 6761e0381f517978312e4f795ce77b2b9f6781a6
   amap_flutter_location: 44ff5beb64f42e0bf5feb402fe299dac0013af6f
   amap_flutter_map: 979e54d227cedac6c7504a2151bfbf3bcf96760a
   AMapFoundation: 9885c48fc3a78fdfb84a0299a2293e56ea3c9fec
@@ -199,14 +230,20 @@ SPEC CHECKSUMS:
   audioplayers_darwin: 877d9a4d06331c5c374595e46e16453ac7eafa40
   connectivity_plus: bf0076dd84a130856aa636df1c71ccaff908fa1d
   device_info_plus: c6fb39579d0f423935b0c9ce7ee2f44b71b9fce6
-  DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
-  DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
+  DKImagePickerController: 946cec48c7873164274ecc4624d19e3da4c1ef3c
+  DKPhotoGallery: b3834fecb755ee09a593d7c9e389d8b5d6deed60
   file_picker: ce3938a0df3cc1ef404671531facef740d03f920
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   fluttertoast: e9a18c7be5413da53898f660530c56f35edfba9c
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   image_gallery_saver: cb43cc43141711190510e92c460eb1655cd343cb
   image_picker_ios: c560581cceedb403a6ff17f2f816d7fea1421fc1
+  NECoreIMKit: 6d595f6d180cf8e0bbf55fa7d862ea177dfef884
+  NECoreKit: 4b32b50065e430f5615ed1ab63b26b29872d6772
+  NEDyldYuv: 6b47adff16186768bf2f8b165697fdee8e94d7ac
+  NERoomKit: 1ed55053d8a0e2e395c5591d6dbe81a003289f93
+  NERtcSDK: eac29b4154dced7af19540e0c1926e6d16c3027e
+  netease_roomkit: d606c2f02f9d420710c1c51024293535b4a2c6fa
   nim_core: 4be3382c0c8123e2ee41089ff44cb447e1adc016
   NIMSDK: 91a2fc9dba32d06a29a15d7768ba921acdb00069
   NIMSDK_LITE: 255f2d6f625914883de2e85b8e2e7edea6b41cb4
@@ -214,12 +251,12 @@ SPEC CHECKSUMS:
   path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
   permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
   phone_state: 699623cef1a83f28ea66bc1d33cf0a65bdb1ffb1
-  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
-  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+  ReachabilitySwift: 7f151ff156cea1481a8411701195ac6a984f4979
+  SDWebImage: a79252b60f4678812d94316c91da69ec83089c9f
   shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
   sqflite: 673a0e54cc04b7d6dba8d24fb8095b31c3a99eec
-  SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
-  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
+  Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
   url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
   video_player_avfoundation: 7c6c11d8470e1675df7397027218274b6d2360b3
   webview_flutter_wkwebview: b7e70ef1ddded7e69c796c7390ee74180182971f
@@ -227,6 +264,6 @@ SPEC CHECKSUMS:
   YXAlog: ac9bab3aff1326caa72cc25aedc358bc8d4f1b31
   YXArtemis_XCFramework: d298161285aa9cf0c99800b17847dc99aef60617
 
-PODFILE CHECKSUM: ddeb31fbf4746a7bc952a1910a7b533a4eb78fc6
+PODFILE CHECKSUM: 5d5edbf6db9a087755b6a1a02223d0ea316c549e
 
 COCOAPODS: 1.15.2

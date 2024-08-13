@@ -3,3 +3,8 @@
 *.ipr
 *.iws
 .idea/
+im_demo/ios/Pods
+im_demo/ios/Pods/
+
+LOCK FILE
+Pods/
